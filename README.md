@@ -4,13 +4,14 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of CausalPhosPro is to ...
+CausalPhosPro is an R package for identifying the causal regulation of phosphoproteomics data.
 
 ## Installation
 
-First install CausalPhosPro from github using the devtools package:
+You can install the released version of CausalPhosPro from github with:
 
 ``` r
+install.packages("devtools")
 devtools::install_github("Li-Lab-SJTU/CausalPhosPro")
 ```
 
