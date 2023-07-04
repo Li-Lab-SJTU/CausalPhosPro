@@ -18,13 +18,9 @@ devtools::install_github("Li-Lab-SJTU/CausalPhosPro")
 ## Directories
 
 -  `extdata/` Contains built-in data sets for the package
-
 -  `man/`  help files and documentation
-
 -  `R/`    R functions in scripts
-
 -  `simulation` includes server and ui files for `run_dia_shiny()`, a shiny-based user interface
-
 -  `tests/` Includes package tests for default parameter accuracy conducted on package build
 
 ## Usage
@@ -33,6 +29,7 @@ devtools::install_github("Li-Lab-SJTU/CausalPhosPro")
  -  `SNP`: The germline SNP data
  -  `cisDist`: The threshold distance for defining cis-acting SNPs
  -  `GencodeAnnotation`: Human genome annotation from GENCODE
+   
  `CausalPhosPro`:  The function cis_snp_detector() is utilized to identify cis-acting SNPs from germline SNP data. The cis_snp_detector() function is called with the following parameters  
 
 
