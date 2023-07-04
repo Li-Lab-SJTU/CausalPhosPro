@@ -46,7 +46,7 @@ The following columns are available in the CausalPhosPro output:
 | Exposure | The name of the exposure variable |
 | Outcome | The name of the outcome variable |
 | ivw_Estimate | The causal point estimate from the MR-IVW method |
-| ivw_Pvalue | P-value that is obtained when testing whether this segment should be represented by one or two states. A low p-value will result in the fitting of a second copy number state |
+| ivw_Pvalue | P-value associated with the causal estimate |
 | ivw_CILower | The lower bound of the 95% confidence interval for the estimated causal effect |
 | ivw_CIUpper | The upper bound of the 95% confidence interval for the estimated causal effect |
 
