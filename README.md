@@ -4,7 +4,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-CausalPhosPro is an R package for identifying the causal regulation of phosphoproteomics data.
+CausalPhosPro is an R package for causal inference of phosphoproteomics data.
 
 ## Installation
 
@@ -15,7 +15,19 @@ install.packages("devtools")
 devtools::install_github("Li-Lab-SJTU/CausalPhosPro")
 ```
 
-## Example
+## Directories
+
+`extdata/` Contains built-in data sets for the package
+
+`man/`  help files and documentation
+
+`R/`    R functions in scripts
+
+`simulation` includes server and ui files for `run_dia_shiny()`, a shiny-based user interface
+
+`tests/` Includes package tests for default parameter accuracy conducted on package build
+
+## Usage
 
 This is a basic example which shows you how to solve a common problem:
 
@@ -24,18 +36,17 @@ library(CausalPhosPro)
 ## basic example code
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+## Description of the output
 
-```{r cars}
-summary(cars)
-```
+The following columns are available in the CausalPhosPro output:
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
+| Column | Description |
+| ------------- | ------------- |
+| IV | Instrumental variables in the causal relationship |
+| Exposure | Exposure refers to a variable or factor that is hypothesized to exert a causal effect on the outcome of interest |
+| Outcome | Outcome represents the response or result of interest in a causal inference study |
+| ivw_Estimate | The causal point estimate from the MR-IVW method |
+| ivw_Pvalue | P-value that is obtained when testing whether this segment should be represented by one or two states. A low p-value will result in the fitting of a second copy number state |
+| ivw_CILower | The lower bound of the 95% confidence interval for the estimated causal effect |
+| ivw_CIUpper | The upper bound of the 95% confidence interval for the estimated causal effect |
 
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
