@@ -32,13 +32,13 @@ devtools::install_github("Li-Lab-SJTU/CausalPhosPro")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-# load CausalPhosPro package
+# loading CausalPhosPro package
 library(CausalPhosPro)
-# Data for exposure X
+# Phosphorylation Data for exposure X
 omicdata1 <- read.csv(system.file("extdata","omicdata1.csv",package="CausalPhosPro", mustWork=TRUE),row.names=1)
-# Data for outcome Y
+# Protein epression Data for outcome Y
 omicdata2 <- read.csv(system.file("extdata","omicdata2.csv",package="CausalPhosPro", mustWork=TRUE),row.names=1)
-# Germline SNPs as IV candidates
+# Germline SNPs as instrumental variable candidates
 SNP <- read.csv(system.file("extdata","SNPmatrix.csv",package="CausalPhosPro", mustWork=TRUE))
 # Covariates Data
 Covariates <- read.csv(system.file("extdata","Covariates.csv",package="CausalPhosPro", mustWork=TRUE),header = TRUE,row.names=1)
@@ -46,7 +46,7 @@ Covariates <- read.csv(system.file("extdata","Covariates.csv",package="CausalPho
 Priori <- unique(read.table(system.file("extdata","phosSNPs.txt",package="CausalPhosPro", mustWork=TRUE),header = T)[,c(1,2)])
 # human genome annotation
 GencodeAnnotation <- read.table(system.file("extdata","gencode.v40.annotation.gene.probeMap",package="CausalPhosPro", mustWork=TRUE),header = T)
-# Detecting cis SNPs  
+# Detecting cis phosphorylation-related SNPs  
 CisPair<-cis_snp_detector(unlist(strsplit(rownames(omicdata1),split='p'))[1],SNP[,1:3],1e6,GencodeAnnotation)
 cisPriori<-Priori[paste(Priori[,1],Priori[,2])%in%paste(CisPair[,1],CisPair[,2]),]
 # Running the CausalPhosPro analysis
