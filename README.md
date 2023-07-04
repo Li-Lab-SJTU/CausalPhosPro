@@ -30,7 +30,13 @@ devtools::install_github("Li-Lab-SJTU/CausalPhosPro")
  -  `cisDist`: The threshold distance for defining cis-acting SNPs
  -  `GencodeAnnotation`: Human genome annotation from GENCODE
    
- `CausalPhosPro`:  The function cis_snp_detector() is utilized to identify cis-acting SNPs from germline SNP data. The cis_snp_detector() function is called with the following parameters  
+ `CausalPhosPro`:  The CausalPhosPro() function is the main function used for conducting the CausalPhosPro analysis. It takes the following parameters:
+-  `omicdata1`: Phosphorylation data for the exposure variable X
+-  `omicdata2`: Protein expression data for the outcome variable Y
+-  `SNP`: Germline SNPs serving as instrumental variable candidates
+-  `Priori`: External prior evidence
+-  `ratio`: SNP minor allele frequency
+-  `Covariates`: Covariates data
 
 
 ## Examples
