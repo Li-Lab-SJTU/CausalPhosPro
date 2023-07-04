@@ -17,18 +17,21 @@ devtools::install_github("Li-Lab-SJTU/CausalPhosPro")
 
 ## Directories
 
-`extdata/` Contains built-in data sets for the package
+-  `extdata/` Contains built-in data sets for the package
 
-`man/`  help files and documentation
+-  `man/`  help files and documentation
 
-`R/`    R functions in scripts
+-  `R/`    R functions in scripts
 
-`simulation` includes server and ui files for `run_dia_shiny()`, a shiny-based user interface
+-  `simulation` includes server and ui files for `run_dia_shiny()`, a shiny-based user interface
 
-`tests/` Includes package tests for default parameter accuracy conducted on package build
+-  `tests/` Includes package tests for default parameter accuracy conducted on package build
 
 ## Usage
+-   `cis_snp_detector`:
+-   `CausalPhosPro`: 
 
+## Examples
 Data loading
 
 ```{r example}
