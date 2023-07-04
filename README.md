@@ -28,8 +28,13 @@ devtools::install_github("Li-Lab-SJTU/CausalPhosPro")
 -  `tests/` Includes package tests for default parameter accuracy conducted on package build
 
 ## Usage
--   `cis_snp_detector`:
--   `CausalPhosPro`: 
+ `cis_snp_detector`:  The function cis_snp_detector() is utilized to identify cis-acting SNPs from germline SNP data. The cis_snp_detector() function is called with the following parameters
+ -  `gene`: The gene symbol of interest
+ -  `SNP`: The germline SNP data
+ -  `cisDist`: The threshold distance for defining cis-acting SNPs
+ -  `GencodeAnnotation`: Human genome annotation from GENCODE
+ `CausalPhosPro`:  The function cis_snp_detector() is utilized to identify cis-acting SNPs from germline SNP data. The cis_snp_detector() function is called with the following parameters  
+
 
 ## Examples
 Data loading
