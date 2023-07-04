@@ -20,7 +20,7 @@ devtools::install_github("Li-Lab-SJTU/CausalPhosPro")
 -  `extdata/` Contains built-in data sets for the package
 -  `man/`  help files and documentation
 -  `R/`    R functions in scripts
--  `simulation` includes files related to simulation studies and examples. 
+-  `simulation` includes code and results related to simulation
 
 ## Usage
  `cis_snp_detector`:  The function cis_snp_detector() is utilized to identify cis-acting SNPs from germline SNP data. The cis_snp_detector() function is called with the following parameters
