@@ -17,7 +17,7 @@ devtools::install_github("Li-Lab-SJTU/CausalPhosPro")
 
 ## Directories
 
--  `extdata/` Contains built-in data sets for the package
+-  `extdata/` contain built-in data sets for the package
 -  `man/`  help files and documentation
 -  `R/`    R functions in scripts
 -  `simulation/` includes code and results related to simulation
