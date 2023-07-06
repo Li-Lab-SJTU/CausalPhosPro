@@ -13,16 +13,16 @@ knitr::opts_chunk$set(
 )
 ```
 
-# CausalPhosPro
+# Phoslink-CI
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of CausalPhosPro is to ...
+The goal of Phoslink-CI is to ...
 
 ## Installation
 
-You can install the development version of CausalPhosPro like so:
+You can install the development version of Phoslink-CI like so:
 
 ``` r
 # FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
@@ -33,7 +33,7 @@ You can install the development version of CausalPhosPro like so:
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-library(CausalPhosPro)
+library(Phoslink-CI)
 ## basic example code
 ```
 
