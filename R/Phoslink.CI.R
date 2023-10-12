@@ -36,7 +36,7 @@ Phoslink.CI <- function(omicdata1, omicdata2, SNP, Priori, ratio = 0.1, Covariat
   # extract instrumental variables from SNP that are also in the Priori list
   IVs <- intersect(rownames(SNP), Priori[, 2])
 
-  library(MendelianRandomization)
+  suppressPackageStartupMessages(library(MendelianRandomization))
   # extract the first row of omicdata1 and omicdata2 as the exposure and outcome variables
   X <- as.numeric(omicdata1[1, ])
   Y <- as.numeric(omicdata2[1, ])
