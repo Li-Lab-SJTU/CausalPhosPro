@@ -17,7 +17,7 @@ devtools::install_github("Li-Lab-SJTU/Phoslink.CI")
 
 ## Directories
 
--  `extdata/` contain built-in data sets for the package
+-  `inst/extdata/` contain built-in data sets for the package
 -  `man/`  help files and documentation
 -  `R/`    R functions in scripts
 
