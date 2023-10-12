@@ -1,0 +1,14 @@
+Package: Phoslink.CI
+Type: Package
+Title: Causal inference based on small sample size
+Version: 0.1.0
+Author: Qun Dong <dongqun.DQ@sjtu.edu.cn>
+Maintainer: Qun Dong <dongqun.DQ@sjtu.edu.cn>
+Description: Causal inference based on small sample size
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports: 
+    MendelianRandomization
+
