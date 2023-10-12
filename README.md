@@ -11,7 +11,6 @@ Phoslink.CI is an R package for causal inference of phosphoproteomics data.
 You can install the released version of Phoslink.CI from github with:
 
 ``` r
-install.packages("devtools")
 devtools::install_github("Li-Lab-SJTU/Phoslink.CI")
 ```
 
