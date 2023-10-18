@@ -27,7 +27,7 @@ devtools::install_github("Li-Lab-SJTU/Phoslink")
  -  `cisDist`: The threshold distance for defining cis-acting SNPs
  -  `GencodeAnnotation`: Human genome annotation from GENCODE
    
- `Phoslink.CI`:  The Phoslink.CI() function is the main function used for conducting the Phoslink analysis. It takes the following parameters:
+ `Phoslink.CI`:  The Phoslink.CI() function is the main function used for conducting the Phoslink analysis using causal inference. It takes the following parameters:
 -  `omicdata1`: Phosphorylation data for the exposure variable X
 -  `omicdata2`: Protein expression data for the outcome variable Y
 -  `SNP`: Germline SNPs serving as instrumental variable candidates
