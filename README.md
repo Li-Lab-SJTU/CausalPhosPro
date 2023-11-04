@@ -7,7 +7,6 @@ Phoslink is an R package for causal inference of phosphoproteomics data.
 
 ## Installation
 You can install the released version of Phoslink from github with:
-
 ``` r
 devtools::install_github("Li-Lab-SJTU/Phoslink")
 ```
