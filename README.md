@@ -58,7 +58,7 @@ Conducting the Phoslink analysis
 CisPair<-cis_snp_detector(genelist=unlist(strsplit(rownames(omicdata1),split='p'))[1],SNP=SNP[,1:3],cisDist=1e6,GencodeAnnotation=GencodeAnnotation)
 cisPriori<-Priori[paste(Priori[,1],Priori[,2])%in%paste(CisPair[,1],CisPair[,2]),]
 # Running the Phoslink analysis
-Phoslink.CI(omicdata1=omicdata1,omicdata2=omicdata2,SNP=SNP, cisPriori=cisPriori,ratio=ratio,Covariates=Covariates)
+Phoslink.CI(omicdata1=omicdata1,omicdata2=omicdata2,SNP=SNP, Priori=cisPriori,ratio=ratio,Covariates=Covariates)
 ```
 
 ## Description of the output
