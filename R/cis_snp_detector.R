@@ -9,7 +9,7 @@
 #' @return cis-regulatory SNPs
 #' @export
 
-cis_snp_detector <- function(gene, SNP, cisDist = 1e6, GencodeAnnotation) {
+cis_snp_detector <- function(genelist, SNP, cisDist = 1e6, GencodeAnnotation) {
   Totalproteinloc <- GencodeAnnotation[GencodeAnnotation[, 2] %in% gene, ]
 
   CisPair <- c()
