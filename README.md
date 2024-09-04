@@ -14,6 +14,7 @@ devtools::install_github("Li-Lab-SJTU/Phoslink")
 ## Directories
 -  `R/`    R functions in scripts
 -  `Simulations/` Provides the R code for simulation analyses and the simulation results are also provided.
+-  `SourceData/` Provides comparison results on real data and the source data for each figure.
 -  `inst/extdata/` contain built-in data sets for the package
 -  `man/`  help files and documentation
    
